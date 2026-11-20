@@ -155,9 +155,11 @@ python devchip.py run --project blinker
 | [accelerometer](examples/accelerometer/) | UART-to-SPI bridge plus `accel.py`, which identifies the LIS3DH and prints X/Y/Z |
 | [pll](examples/pll/pll_demo.v) | Running logic at 135 MHz from a generated PLL |
 | [pin_tester](examples/pin_tester/) | Reading all 48 PMOD/header pins; touch a pin with GND to identify it |
+| [whack_a_led](examples/whack_a_led/whack_a_led.v) | An arcade game: hit the button under the lit LED before time runs out. Score on the display, lives on the decimal points, sound effects, and the PIR says `HEY` when you walk past. S0 = hard mode, S7 = mute. Testbench: [sim/tb_whack_a_led.v](sim/tb_whack_a_led.v) |
 
 ```text
 python devchip.py run examples/selftest/selftest.v rtl/uart_tx.v
+python devchip.py run examples/whack_a_led/whack_a_led.v
 python devchip.py run examples/accelerometer/accel_bridge.v rtl/uart_rx.v rtl/uart_tx.v rtl/spi_master.v
 python examples/accelerometer/accel.py
 ```

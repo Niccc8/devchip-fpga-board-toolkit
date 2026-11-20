@@ -217,7 +217,7 @@ def cmd_sim(a):
         raise CliError("iverilog/vvp not found (they ship with OSS CAD Suite)")
     files = ([a.tb] if a.tb else []) + list(a.sources)
     os.makedirs(a.out, exist_ok=True)
-    out = os.path.join(a.out, "sim.vvp")
+    out = os.path.abspath(os.path.join(a.out, "sim.vvp"))   # vvp runs with cwd=a.out
     cmd = [iverilog, "-g2012", "-o", out] + [f"-D{d}" for d in (a.defines or [])] + \
           [f"-I{i}" for i in (a.includes or [])] + files
     r = subprocess.run(cmd, env=env)
