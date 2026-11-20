@@ -1,0 +1,18 @@
+# build outputs
+build/
+build_*/
+*.vvp
+*.vcd
+*.fs
+*.fs.gz
+
+# python
+__pycache__/
+*.pyc
+.venv/
+
+# editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

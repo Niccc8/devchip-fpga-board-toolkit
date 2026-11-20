@@ -1,0 +1,106 @@
+// DevChipBoard v2.2 + Sipeed Tang Primer 20K (GW2A-LV18PG256C8/I7)
+// GENERATED from board/pins.csv by `python devchip.py gen` - do not edit.
+// Port names = ChipInventor location names. Inputs/outputs: see pins.csv.
+// Balls E8 E9 T2 T3 T4 (s0 s1 c6 e6 e7) are on a 1.5 V bank.
+IO_LOC  "clk" H11;   // in clock GCLKT_0
+IO_LOC  "uart_rx" N8;   // in uart
+IO_LOC  "uart_tx" L9;   // out uart
+IO_LOC  "led0" P15;   // out led
+IO_LOC  "led1" P16;   // out led
+IO_LOC  "led2" N15;   // out led
+IO_LOC  "led3" N16;   // out led
+IO_LOC  "led4" N14;   // out led
+IO_LOC  "led5" L16;   // out led
+IO_LOC  "led6" L14;   // out led
+IO_LOC  "led7" K15;   // out led GCLKC_1
+IO_LOC  "s0" E8;   // in switch LPLL2_C_IN
+IO_PORT "s0" PULL_MODE=DOWN;
+IO_LOC  "s1" E9;   // in switch
+IO_PORT "s1" PULL_MODE=DOWN;
+IO_LOC  "s2" J11;   // in switch
+IO_PORT "s2" PULL_MODE=DOWN;
+IO_LOC  "s3" L12;   // in switch
+IO_PORT "s3" PULL_MODE=DOWN;
+IO_LOC  "s4" A9;   // in switch GCLKT_7
+IO_PORT "s4" PULL_MODE=DOWN;
+IO_LOC  "s5" C9;   // in switch GCLKC_7
+IO_PORT "s5" PULL_MODE=DOWN;
+IO_LOC  "s6" E14;   // in switch
+IO_PORT "s6" PULL_MODE=DOWN;
+IO_LOC  "s7" D16;   // in switch
+IO_PORT "s7" PULL_MODE=DOWN;
+IO_LOC  "b0" L13;   // in button
+IO_LOC  "b1" H15;   // in button
+IO_LOC  "b2" G16;   // in button
+IO_LOC  "b3" H14;   // in button
+IO_LOC  "b4" H16;   // in button
+IO_LOC  "b5" J15;   // in button
+IO_LOC  "b6" K16;   // in button
+IO_LOC  "b7" K14;   // in button GCLKT_1
+IO_LOC  "disp_1" K13;   // out 7seg
+IO_LOC  "disp_2" K12;   // out 7seg
+IO_LOC  "disp_3" K11;   // out 7seg
+IO_LOC  "disp_4" H13;   // out 7seg
+IO_LOC  "disp_a" P7;   // out 7seg
+IO_LOC  "disp_b" L8;   // out 7seg
+IO_LOC  "disp_c" D11;   // out 7seg
+IO_LOC  "disp_d" E10;   // out 7seg
+IO_LOC  "disp_dp" D10;   // out 7seg
+IO_LOC  "disp_e" R7;   // out 7seg
+IO_LOC  "disp_f" M6;   // out 7seg
+IO_LOC  "disp_g" F10;   // out 7seg
+IO_LOC  "buzzer" J12;   // out buzzer
+IO_LOC  "pir" R16;   // in pir
+IO_PORT "pir" PULL_MODE=DOWN;
+IO_LOC  "acc_cs" A13;   // out accel READY
+IO_LOC  "acc_miso" B10;   // in accel RECONFIG_N
+IO_LOC  "acc_mosi" G11;   // out accel
+IO_LOC  "acc_sclk" H12;   // out accel
+IO_LOC  "pmod0_0" T9;   // io pmod DIN CLKHOLD_N
+IO_LOC  "pmod0_1" T8;   // io pmod
+IO_LOC  "pmod0_2" T7;   // io pmod GCLKT_3
+IO_LOC  "pmod0_3" T6;   // io pmod
+IO_LOC  "pmod0_4" P8;   // io pmod
+IO_LOC  "pmod0_5" R8;   // io pmod GCLKC_3
+IO_LOC  "pmod0_6" P6;   // io pmod
+IO_LOC  "pmod0_7" T10;   // io pmod SI D2
+IO_LOC  "pmod1_0" R13;   // io pmod
+IO_LOC  "pmod1_1" R12;   // io pmod
+IO_LOC  "pmod1_2" R11;   // io pmod
+IO_LOC  "pmod1_3" P11;   // io pmod
+IO_LOC  "pmod1_4" P13;   // io pmod
+IO_LOC  "pmod1_5" T12;   // io pmod
+IO_LOC  "pmod1_6" T11;   // io pmod
+IO_LOC  "pmod1_7" P9;   // io pmod DOUT WE_N
+IO_LOC  "c0" A14;   // io header LPLL1_C_FB
+IO_LOC  "c1" C12;   // io header LPLL1_T_IN
+IO_LOC  "c2" A12;   // io header
+IO_LOC  "c3" B11;   // io header
+IO_LOC  "c4" C10;   // io header SCLK
+IO_LOC  "c5" D7;   // io header
+IO_LOC  "c6" T3;   // io header
+IO_LOC  "c7" T5;   // io header
+IO_LOC  "d0" N7;   // io header RPLL2_C_FB
+IO_LOC  "d1" R9;   // io header FASTRD_N D3
+IO_LOC  "d2" E15;   // io header
+IO_LOC  "d3" A15;   // io header
+IO_LOC  "d4" G15;   // io header
+IO_LOC  "d5" J14;   // io header
+IO_LOC  "d6" T15;   // io header RPLL1_T_IN
+IO_LOC  "d7" F13;   // io header
+IO_LOC  "e0" B14;   // io header
+IO_LOC  "e1" B13;   // io header LPLL1_T_FB
+IO_LOC  "e2" B12;   // io header LPLL1_C_IN
+IO_LOC  "e3" C11;   // io header
+IO_LOC  "e4" A11;   // io header
+IO_LOC  "e5" C7;   // io header
+IO_LOC  "e6" T2;   // io header
+IO_LOC  "e7" T4;   // io header
+IO_LOC  "f0" N6;   // io header
+IO_LOC  "f1" N9;   // io header SSPI_CS_N D0
+IO_LOC  "f2" F16;   // io header
+IO_LOC  "f3" D14;   // io header
+IO_LOC  "f4" F14;   // io header
+IO_LOC  "f5" G14;   // io header
+IO_LOC  "f6" J16;   // io header
+IO_LOC  "f7" G12;   // io header

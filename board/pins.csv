@@ -1,0 +1,94 @@
+location,ball,gowin_io,direction,group,active,pull,vccio,special,notes
+clk,H11,IOT27A,in,clock,,,3.3,GCLKT_0,27 MHz oscillator on the Tang Primer 20K module
+uart_rx,N8,IOR40A,in,uart,,,3.3,,FPGA receives from PC (CP2105 Standard port)
+uart_tx,L9,IOR40B,out,uart,,,3.3,,FPGA sends to PC (CP2105 Standard port)
+led0,P15,IOT54A,out,led,high,,3.3,,LED on when driven 1
+led1,P16,IOT48B,out,led,high,,3.3,,LED on when driven 1
+led2,N15,IOT48A,out,led,high,,3.3,,LED on when driven 1
+led3,N16,IOT52A,out,led,high,,3.3,,LED on when driven 1
+led4,N14,IOT52B,out,led,high,,3.3,,LED on when driven 1
+led5,L16,IOT34A,out,led,high,,3.3,,LED on when driven 1
+led6,L14,IOT34B,out,led,high,,3.3,,LED on when driven 1
+led7,K15,IOT30B,out,led,high,,3.3,GCLKC_1,LED on when driven 1
+s0,E8,IOL45B,in,switch,high,DOWN,1.5,LPLL2_C_IN,slide switch reads 1 when on
+s1,E9,IOL38B,in,switch,high,DOWN,1.5,,slide switch reads 1 when on
+s2,J11,IOT32A,in,switch,high,DOWN,3.3,,slide switch reads 1 when on
+s3,L12,IOT32B,in,switch,high,DOWN,3.3,,slide switch reads 1 when on
+s4,A9,IOL27A,in,switch,high,DOWN,3.3,GCLKT_7,slide switch reads 1 when on
+s5,C9,IOL27B,in,switch,high,DOWN,3.3,GCLKC_7,slide switch reads 1 when on
+s6,E14,IOT4B,in,switch,high,DOWN,3.3,,slide switch reads 1 when on
+s7,D16,IOT4A,in,switch,high,DOWN,3.3,,slide switch reads 1 when on
+b0,L13,IOT38B,in,button,high,,3.3,,push button reads 1 while pressed
+b1,H15,IOT16B,in,button,high,,3.3,,push button reads 1 while pressed
+b2,G16,IOT16A,in,button,high,,3.3,,push button reads 1 while pressed
+b3,H14,IOT20A,in,button,high,,3.3,,push button reads 1 while pressed
+b4,H16,IOT20B,in,button,high,,3.3,,push button reads 1 while pressed
+b5,J15,IOT24A,in,button,high,,3.3,,push button reads 1 while pressed
+b6,K16,IOT24B,in,button,high,,3.3,,push button reads 1 while pressed
+b7,K14,IOT30A,in,button,high,,3.3,GCLKT_1,push button reads 1 while pressed
+disp_1,K13,IOT36A,out,7seg,high,,3.3,,digit enable (1 = digit on); multiplex the 4 digits
+disp_2,K12,IOT36B,out,7seg,high,,3.3,,digit enable (1 = digit on); multiplex the 4 digits
+disp_3,K11,IOT38A,out,7seg,high,,3.3,,digit enable (1 = digit on); multiplex the 4 digits
+disp_4,H13,IOT18A,out,7seg,high,,3.3,,digit enable (1 = digit on); multiplex the 4 digits
+disp_a,P7,IOR49B,out,7seg,high,,3.3,,"segment (1 = lit), shared by all 4 digits"
+disp_b,L8,IOR44B,out,7seg,high,,3.3,,"segment (1 = lit), shared by all 4 digits"
+disp_c,D11,IOL22A,out,7seg,high,,3.3,,"segment (1 = lit), shared by all 4 digits"
+disp_d,E10,IOL17B,out,7seg,high,,3.3,,"segment (1 = lit), shared by all 4 digits"
+disp_dp,D10,IOL17A,out,7seg,high,,3.3,,"segment (1 = lit), shared by all 4 digits"
+disp_e,R7,IOR49A,out,7seg,high,,3.3,,"segment (1 = lit), shared by all 4 digits"
+disp_f,M6,IOR44A,out,7seg,high,,3.3,,"segment (1 = lit), shared by all 4 digits"
+disp_g,F10,IOL11A,out,7seg,high,,3.3,,"segment (1 = lit), shared by all 4 digits"
+buzzer,J12,IOT18B,out,buzzer,high,,3.3,,drive a square wave (e.g. 2 kHz) for a tone
+pir,R16,IOT54B,in,pir,high,DOWN,3.3,,PIR motion sensor; ~4 s lockout after each trigger
+acc_cs,A13,IOR32A,out,accel,,,3.3,READY,"LIS3DH accelerometer chip select (active low), SPI mode 3"
+acc_miso,B10,IOR31B,in,accel,,,3.3,RECONFIG_N,LIS3DH SPI data out (ID register 0x0F reads 0x33)
+acc_mosi,G11,IOT14A,out,accel,,,3.3,,LIS3DH SPI data in
+acc_sclk,H12,IOT14B,out,accel,,,3.3,,"LIS3DH SPI clock (idle high, mode 3)"
+pmod0_0,T9,IOR38A,io,pmod,,,3.3,DIN CLKHOLD_N,"PMOD connector, free for user"
+pmod0_1,T8,IOR42B,io,pmod,,,3.3,,"PMOD connector, free for user"
+pmod0_2,T7,IOR29A,io,pmod,,,3.3,GCLKT_3,"PMOD connector, free for user"
+pmod0_3,T6,IOR53B,io,pmod,,,3.3,,"PMOD connector, free for user"
+pmod0_4,P8,IOR42A,io,pmod,,,3.3,,"PMOD connector, free for user"
+pmod0_5,R8,IOR29B,io,pmod,,,3.3,GCLKC_3,"PMOD connector, free for user"
+pmod0_6,P6,IOR53A,io,pmod,,,3.3,,"PMOD connector, free for user"
+pmod0_7,T10,IOR35B,io,pmod,,,3.3,SI D2,"PMOD connector, free for user"
+pmod1_0,R13,IOR20A,io,pmod,,,3.3,,"PMOD connector, free for user"
+pmod1_1,R12,IOR11A,io,pmod,,,3.3,,"PMOD connector, free for user"
+pmod1_2,R11,IOR17A,io,pmod,,,3.3,,"PMOD connector, free for user"
+pmod1_3,P11,IOR24B,io,pmod,,,3.3,,"PMOD connector, free for user"
+pmod1_4,P13,IOR11B,io,pmod,,,3.3,,"PMOD connector, free for user"
+pmod1_5,T12,IOR17B,io,pmod,,,3.3,,"PMOD connector, free for user"
+pmod1_6,T11,IOR24A,io,pmod,,,3.3,,"PMOD connector, free for user"
+pmod1_7,P9,IOR38B,io,pmod,,,3.3,DOUT WE_N,"PMOD connector, free for user"
+c0,A14,IOL8B,io,header,,,3.3,LPLL1_C_FB,"2x20 header, free for user"
+c1,C12,IOL7A,io,header,,,3.3,LPLL1_T_IN,"2x20 header, free for user"
+c2,A12,IOL13B,io,header,,,3.3,,"2x20 header, free for user"
+c3,B11,IOL13A,io,header,,,3.3,,"2x20 header, free for user"
+c4,C10,IOR39A,io,header,,,3.3,SCLK,"2x20 header, free for user"
+c5,D7,IOL53B,io,header,,,3.3,,"2x20 header, free for user"
+c6,T3,IOB52B,io,header,,,1.5,,"2x20 header, free for user"
+c7,T5,IOB54B,io,header,,,3.3,,"2x20 header, free for user"
+d0,N7,IOR47B,io,header,,,3.3,RPLL2_C_FB,"2x20 header, free for user"
+d1,R9,IOR35A,io,header,,,3.3,FASTRD_N D3,"2x20 header, free for user"
+d2,E15,IOT44B,io,header,,,3.3,,"2x20 header, free for user"
+d3,A15,IOL2B,io,header,,,3.3,,"2x20 header, free for user"
+d4,G15,IOT13A,io,header,,,3.3,,"2x20 header, free for user"
+d5,J14,IOT22B,io,header,,,3.3,,"2x20 header, free for user; weakly pulled high on the carrier (reads 1 when undriven)"
+d6,T15,IOR7A,io,header,,,3.3,RPLL1_T_IN,"2x20 header, free for user"
+d7,F13,IOT8A,io,header,,,3.3,,"2x20 header, free for user; weakly pulled high on the carrier (reads 1 when undriven)"
+e0,B14,IOL2A,io,header,,,3.3,,"2x20 header, free for user"
+e1,B13,IOL8A,io,header,,,3.3,LPLL1_T_FB,"2x20 header, free for user"
+e2,B12,IOL7B,io,header,,,3.3,LPLL1_C_IN,"2x20 header, free for user"
+e3,C11,IOL15B,io,header,,,3.3,,"2x20 header, free for user"
+e4,A11,IOL15A,io,header,,,3.3,,"2x20 header, free for user"
+e5,C7,IOL40B,io,header,,,3.3,,"2x20 header, free for user"
+e6,T2,IOB48B,io,header,,,1.5,,"2x20 header, free for user"
+e7,T4,IOB45B,io,header,,,1.5,,"2x20 header, free for user"
+f0,N6,IOR51A,io,header,,,3.3,,"2x20 header, free for user"
+f1,N9,IOR36B,io,header,,,3.3,SSPI_CS_N D0,"2x20 header, free for user"
+f2,F16,IOT9B,io,header,,,3.3,,"2x20 header, free for user"
+f3,D14,IOT44A,io,header,,,3.3,,"2x20 header, free for user"
+f4,F14,IOT9A,io,header,,,3.3,,"2x20 header, free for user"
+f5,G14,IOT13B,io,header,,,3.3,,"2x20 header, free for user"
+f6,J16,IOT22A,io,header,,,3.3,,"2x20 header, free for user; weakly pulled high on the carrier (reads 1 when undriven)"
+f7,G12,IOT8B,io,header,,,3.3,,"2x20 header, free for user; weakly pulled high on the carrier (reads 1 when undriven)"
